@@ -8,11 +8,13 @@ from pisi.actionsapi import autotools
 from pisi.actionsapi import pisitools
 from pisi.actionsapi import shelltools
 from pisi.actionsapi import kerneltools
+from pisi.actionsapi import get
 
 def setup():
     shelltools.system("./autogen.sh")
     autotools.configure()
-    #autotools.configure("--with-linux=/usr/src/linux-headers-%s --with-gcc=%s --with-g++=%s"  % (kerneltools.getKernelVersion(), get.CC(), get.CXX())))
+    KDIR = kerneltools.getKernelVersion()
+    autotools.configure("--with-linux=/usr/src/linux-headers-%s --with-gcc=%s --with-g++=%s"  % (KDIR, get.CC(), get.CXX()))
 
 def build():
     autotools.make()

@@ -12,7 +12,7 @@
         <IsA>app</IsA>
         <Summary>Solaris Porting Layer</Summary>
         <Description>Solaris Porting Layer</Description>
-        <Archive sha1sum="a75592982c67d6e6a3ff8a866de47f25426a9ac0" type="targz">https://github.com/zfsonlinux/spl/archive/spl-0.6.3-1.1.tar.gz</Archive>
+        <Archive sha1sum="178095b1980fa4b635c8e291ba26447a4a63702b" type="targz">http://81.228.208.166/spl-git-20141125.tar.gz</Archive>
         <BuildDependencies>
         </BuildDependencies>
     </Source>
